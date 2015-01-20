@@ -1,0 +1,118 @@
+create database eCommJsp;
+
+use eCommJsp
+
+create table Categories (CategoryId int, Category varchar(20)); 
+
+create table Products (ProductId int, CategoryId int, Name varchar(50), Description varchar(500), Price float);
+
+create table Orders (OrderId int, ContactName varchar(50), DeliveryAddress varchar(200), CCName varchar(50), CCNumber varchar(20), CCExpiryDate varchar(6));
+
+create table OrderDetails (Id int, OrderId int, ProductId int, Quantity int, Price int);
+
+
+C:\Users\Dev>cd..
+
+C:\Users>cd..
+
+C:\>cd xampp
+
+C:\xampp>cd mysql
+
+C:\xampp\cd bin
+
+C:\xampp\mysql\bin>mysql -u root -p
+Enter password:
+
+
+ insert into categories values (1,'Fruites');
+
+ insert into categories values (2,'Vegetables');
+
+ insert into categories values (3,'Biscuits');
+
+ insert into categories values (4,'Juices');
+
+ insert into categories values (5,'Chocolates');
+
+ insert into categories values (6,'Candies');
+
+ insert into categories values (7,'Milk');
+
+
+ insert into products values (101,1,'Mangoes','Sweet and delicious',200.00);
+
+ insert into products values (102,1,'Oranges','Sweet-Sour',100.00);
+
+ insert into products values (103,1,'Apples','Sweet',90.00);
+
+ insert into products values (104,1,'Bananas','Sweet',50.00);
+
+ insert into products values (105,1,'Grapes','Sweet-Sour',75.00);
+
+ insert into products values (201,2,'Veg1','      ',10.00);
+
+ insert into products values (202,2,'Veg2','      ',15.00);
+
+ insert into products values (203,2,'Veg3','      ',28.00);
+
+ insert into products values (204,2,'Veg4','      ',36.00);
+
+ insert into products values (301,3,'Palrle G','Universal Glucose Biscuits',5.00);
+
+ insert into products values (302,3,'Marie Gold','Universal Biscuits for diabetes',10.00);
+
+ insert into products values (303,3,'Hide & Seek','For Choco-chip Lovers',25.00);
+
+ insert into products values (304,3,'KrackJack','Kabhi Khatta - Kabhi Meetha',15.00);
+
+ insert into products values (305,3,'Monaco','When u want attack',12.00);
+
+ insert into products values (401,4,'Orange Juice','Refresh with sweet vitamin C',20.00);
+
+ insert into products values (402,4,'Lime Juice','Universal Refreshment',10.00);
+
+ insert into products values (403,4,'Grape Juice','Obviously with grape taste',25.00);
+
+ insert into products values (404,4,'Watermelon','Watery but you love',10.00);
+ 
+ insert into products values (405,4,'Mix Fruit Juice','Mix is always awesome',30.00);
+
+ insert into products values (501,5,'Kit-Kat','4.4 as u remember',20.00);
+
+ insert into products values (502,5,'5 Star','Dhondate reh jao ge',10.00);
+
+ insert into products values (503,5,'Dairy Milk','Dhondate reh jao ge',5.00);
+
+ insert into products values (504,5,'Dairy Milk Silk','Accha lagta hai',50.00);
+
+ insert into products values (505,5,'Snikers','Survival Chocolate',30.00);
+
+ insert into products values (506,5,'Bournville','Nice Dark Chocolate',30.00);
+ 
+ insert into products values (601,6,'Cane Candy','Cane-Cane',10.00);
+ 
+ insert into products values (602,6,'Jelly Bean','yes yes 4.3',5.00);
+ 
+ insert into products values (603,6,'Gummie Bear','Nice Gummies With Vitamins',12.00);
+ 
+ insert into products values (604,6,'Stick Candy','Sugar Stick',8.00);
+ 
+ insert into products values (605,6,'Lollipop','Oh yes 5.0',20.00);
+ 
+ insert into products values (701,7,'Dairy Milk','Yes by hurting animals',40.00);
+ 
+ insert into products values (702,7,'Soya Milk','As Animal free VEGAN',35.00);
+ 
+ insert into products values (703,7,'Dairy Paneer','Yes from animals',35.00);
+ 
+ insert into products values (704,7,'Soya Paneer','Vegan',35.00);
+ 
+ insert into products values (705,7,'Yogurt','Fremented milk with bacteria',10.00);
+ 
+ insert into products values (706,7,'Xtra Slim Milk','Milk with out fat',90.00);
+ 
+ insert into products values (707,7,'Cheese','Rich cube of Fats',15.00);
+ 
+ insert into products values (708,7,'Butter','Get fats and be fat',45.00);
+ 
